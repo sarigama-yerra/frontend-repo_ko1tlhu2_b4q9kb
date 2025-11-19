@@ -32,23 +32,27 @@ export default function Contact() {
         <div className="grid md:grid-cols-12 gap-8">
           <div className="md:col-span-5">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Let’s connect</h2>
-            <p className="mt-4 text-slate-700">If you feel a yes, write a few lines below. Or email me at <a href="mailto:polina@example.com" className="underline">polina@example.com</a>. VK and Telegram links on request.</p>
+            <p className="mt-4 text-slate-700">If you feel a yes, feel free to connect with Telegram or VK.</p>
+            <div className="mt-6 flex items-center gap-3">
+              <a href="https://t.me/polly_makk" target="_blank" rel="noreferrer" className="inline-flex items-center rounded-lg bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800">Book a session</a>
+              <a href="https://vk.com/magic.content" target="_blank" rel="noreferrer" className="inline-flex items-center rounded-lg bg-white ring-1 ring-slate-200 text-slate-900 px-5 py-3 text-sm font-semibold hover:bg-slate-50">VK</a>
+            </div>
           </div>
           <div className="md:col-span-7">
-            <form onSubmit={onSubmit} className="grid gap-4">
+            <form onSubmit={onSubmit} className="grid gap-4 hidden">
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-slate-700">Name</label>
-                  <input name="name" required className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
+                  <input name="name" className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700">Email</label>
-                  <input type="email" name="email" required className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
+                  <input type="email" name="email" className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
                 </div>
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-700">Message</label>
-                <textarea name="message" rows="5" required placeholder="Tell me about your request. Words, Games, or Art? What would you like to feel after?" className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
+                <textarea name="message" rows="5" placeholder="Tell me about your request. Words, Games, or Art? What would you like to feel after?" className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
               </div>
               <div className="flex items-center gap-4">
                 <button className="inline-flex items-center rounded-lg bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800">Send</button>

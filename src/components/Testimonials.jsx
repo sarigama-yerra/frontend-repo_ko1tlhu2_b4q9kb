@@ -23,10 +23,10 @@ export default function Testimonials() {
   return (
     <section id="testimonials" className="py-16 md:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Client words</h2>
-        <blockquote className="mt-4 p-5 rounded-xl bg-rose-50 ring-1 ring-rose-200 text-rose-900">
-          <p className="text-sm">“Everything can be turned into light. True strength is in acceptance.” — Polina</p>
+        <blockquote className="p-5 rounded-xl bg-rose-50 ring-1 ring-rose-200 text-rose-900">
+          <p className="text-sm font-bold">“Everything can be turned into light. True strength is in acceptance.” — Polina</p>
         </blockquote>
+        <h2 className="mt-6 text-2xl md:text-3xl font-bold text-slate-900">Client words</h2>
         <ul className="mt-8 grid md:grid-cols-3 gap-6">
           {items.map((t) => (
             <li key={t.name} className="p-6 rounded-xl ring-1 ring-slate-200 bg-white">

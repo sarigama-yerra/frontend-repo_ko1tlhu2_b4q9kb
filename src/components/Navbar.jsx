@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Menu, X, Mail, Send } from 'lucide-react'
+import { Menu, X, Send } from 'lucide-react'
 
 const navItems = [
   { label: 'Home', href: '#top' },
@@ -25,10 +25,10 @@ export default function Navbar() {
             </a>
           ))}
           <div className="w-px h-5 bg-slate-300" />
-          <a href="mailto:polina@example.com" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
-            <Mail size={16} /> Email
+          <a href="https://vk.com/magic.content" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
+            VK
           </a>
-          <a href="#contact" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
+          <a href="https://t.me/polly_makk" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
             <Send size={16} /> Write
           </a>
         </nav>
@@ -47,7 +47,8 @@ export default function Navbar() {
               </a>
             ))}
             <div className="flex items-center gap-4 pt-2 text-slate-700">
-              <a href="mailto:polina@example.com" className="inline-flex items-center gap-2"><Mail size={16}/> Email</a>
+              <a href="https://vk.com/magic.content" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2">VK</a>
+              <a href="https://t.me/polly_makk" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2"><Send size={16}/> Write</a>
             </div>
           </div>
         </div>

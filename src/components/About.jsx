@@ -4,20 +4,14 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-12 gap-10 items-start">
           <div className="md:col-span-5">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900">About Polina</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900">About me</h2>
             <p className="mt-4 text-slate-700">
-              I work with words, games and art so people can return to themselves. My path moves through journalism → copywriting → HR & content strategy → transformational games and art therapy. Through it all runs the same thread: listening for the essence and giving it form.
-            </p>
-            <p className="mt-4 text-slate-700">
-              I hold a BA in Social Work & Pedagogy and taught English in primary school. At 16, I passed a test interview in English with a music band, became a journalist and wrote 100+ articles — later leading a column on intuitive eating and attending regional press conferences as a city correspondent.
-            </p>
-            <p className="mt-4 text-slate-700">
-              For 6+ years I freelanced as a copywriter, completing 580+ client projects. I also worked as an HR assistant and content manager in a large network company: created and packaged social media profiles to attract talent, built content plans across the franchise, wrote 310+ texts, and coordinated teams daily in Slack and Trello.
+              I’m a content strategist & writer who help to grow and increase my client's brands awareness. My route through journalism, teaching, freelance copywriting, and HR/content management in a large network company taught me to hear the real story behind any project and turn it into a clear content system. With 6+ years of freelance practice and 580+ client projects, I now build strategies that feel alive, human and emotionally honest. Feel free to connect with me 🤗.
             </p>
           </div>
           <div className="md:col-span-7">
             <div className="grid sm:grid-cols-2 gap-4">
-              {[
+              {[ 
                 { title: 'Mission', desc: 'To be a calm field of transformation where honesty becomes strength and everything can be turned into light.' },
                 { title: 'Values', desc: 'Depth, acceptance, safety, clarity. Slow typography, warm colors, and enough space to breathe.' },
                 { title: 'How I work', desc: 'Listen deeply → reflect essence → offer gentle structure. We move with respect for pace and nervous system.' },

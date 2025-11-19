@@ -1,12 +1,6 @@
-import { ArrowRight, Sparkles, BookOpen, Gamepad2, Palette } from 'lucide-react'
+import { Sparkles, BookOpen, Gamepad2, Palette } from 'lucide-react'
 
 export default function Hero() {
-  const actions = [
-    { label: 'Book a session', href: '#contact' },
-    { label: 'Request copywriting', href: '#services' },
-    { label: 'Commission a painting', href: '#art' },
-  ]
-
   const directions = [
     {
       icon: BookOpen,
@@ -42,13 +36,6 @@ export default function Hero() {
             <p className="mt-5 text-base sm:text-lg text-slate-700 max-w-2xl">
               Creative practitioner at the intersection of deep copywriting, content strategy, transformational games and art therapy. A calm field of transformation where you can see your true essence. True strength is in acceptance.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              {actions.map((a) => (
-                <a key={a.label} href={a.href} className="inline-flex items-center gap-2 rounded-lg bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800">
-                  {a.label} <ArrowRight size={16} />
-                </a>
-              ))}
-            </div>
           </div>
           <div className="md:col-span-5">
             <div className="relative aspect-square rounded-2xl bg-gradient-to-tr from-rose-200 via-amber-200 to-blue-200 p-1 shadow-[0_10px_40px_rgba(2,6,23,0.08)]">

@@ -73,7 +73,6 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-end justify-between gap-6 mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Cases</h2>
-          <a href="#contact" className="hidden sm:inline-flex items-center rounded-lg bg-slate-900 text-white px-4 py-2 text-sm font-semibold hover:bg-slate-800">Request copywriting</a>
         </div>
 
         <ul className="grid md:grid-cols-3 gap-6">
