@@ -1,9 +1,11 @@
 import { useState } from 'react'
-import { Menu, X, Mail, Github, Linkedin } from 'lucide-react'
+import { Menu, X, Mail, Send } from 'lucide-react'
 
 const navItems = [
+  { label: 'Home', href: '#top' },
   { label: 'About', href: '#about' },
-  { label: 'Projects', href: '#projects' },
+  { label: 'Services', href: '#services' },
+  { label: 'Cases', href: '#projects' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -14,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/80 border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        <a href="#top" className="font-semibold text-slate-900 tracking-tight text-lg">Polly</a>
+        <a href="#top" className="font-semibold text-slate-900 tracking-tight text-lg">Polina Makkurina</a>
 
         <nav className="hidden md:flex items-center gap-6 text-sm text-slate-700">
           {navItems.map((item) => (
@@ -23,14 +25,11 @@ export default function Navbar() {
             </a>
           ))}
           <div className="w-px h-5 bg-slate-300" />
-          <a href="mailto:polly@example.com" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
+          <a href="mailto:polina@example.com" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
             <Mail size={16} /> Email
           </a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer" className="text-slate-700 hover:text-slate-900">
-            <Github size={18} />
-          </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noreferrer" className="text-slate-700 hover:text-slate-900">
-            <Linkedin size={18} />
+          <a href="#contact" className="inline-flex items-center gap-2 text-slate-700 hover:text-slate-900">
+            <Send size={16} /> Write
           </a>
         </nav>
 
@@ -48,9 +47,7 @@ export default function Navbar() {
               </a>
             ))}
             <div className="flex items-center gap-4 pt-2 text-slate-700">
-              <a href="mailto:polly@example.com" className="inline-flex items-center gap-2"><Mail size={16}/> Email</a>
-              <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={18}/></a>
-              <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={18}/></a>
+              <a href="mailto:polina@example.com" className="inline-flex items-center gap-2"><Mail size={16}/> Email</a>
             </div>
           </div>
         </div>

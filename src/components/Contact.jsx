@@ -16,7 +16,7 @@ export default function Contact() {
       })
       const data = await res.json()
       if (res.ok) {
-        setStatus('Thanks for reaching out! I’ll get back to you shortly.')
+        setStatus('Thank you. Your message has been received — I will reply with care.')
         e.currentTarget.reset()
       } else {
         setStatus(data?.detail || 'Something went wrong. Please try again.')
@@ -32,7 +32,7 @@ export default function Contact() {
         <div className="grid md:grid-cols-12 gap-8">
           <div className="md:col-span-5">
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Let’s connect</h2>
-            <p className="mt-4 text-slate-600">Have a project in mind or just want to say hi? Drop a line below or email me at <a href="mailto:polly@example.com" className="underline">polly@example.com</a>.</p>
+            <p className="mt-4 text-slate-700">If you feel a yes, write a few lines below. Or email me at <a href="mailto:polina@example.com" className="underline">polina@example.com</a>. VK and Telegram links on request.</p>
           </div>
           <div className="md:col-span-7">
             <form onSubmit={onSubmit} className="grid gap-4">
@@ -48,10 +48,10 @@ export default function Contact() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-slate-700">Message</label>
-                <textarea name="message" rows="5" required className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
+                <textarea name="message" rows="5" required placeholder="Tell me about your request. Words, Games, or Art? What would you like to feel after?" className="mt-1 w-full rounded-lg border-slate-300 focus:border-slate-900 focus:ring-slate-900/10" />
               </div>
               <div className="flex items-center gap-4">
-                <button className="inline-flex items-center rounded-lg bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800">Send message</button>
+                <button className="inline-flex items-center rounded-lg bg-slate-900 text-white px-5 py-3 text-sm font-semibold hover:bg-slate-800">Send</button>
                 {status && <p className="text-sm text-slate-700">{status}</p>}
               </div>
             </form>
